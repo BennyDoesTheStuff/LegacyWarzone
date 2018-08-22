@@ -4,4 +4,3 @@ main: com.minehut.warzone.Warzone
 version: 1.0.0
 authors: [Minehut]
 prefix: Warzone
-depend: [Cloud]
