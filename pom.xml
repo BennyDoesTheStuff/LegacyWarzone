@@ -5,22 +5,17 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.minehut</groupId>
     <artifactId>warzone</artifactId>
-    <version>1.10.0-SNAPSHOT</version>
+    <version>1.12.2-SNAPSHOT</version>
 
     <repositories>
         <repository>
-            <id>minehut-repo</id>
-            <url>http://repo.minehut.com/artifactory/libs-snapshot-local</url>
+            <id>destroystokyo-repo</id>
+            <url>https://destroystokyo.com/repo/service/rest/repository/browse/maven-public/</url>
         </repository>
 
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/groups/public/</url>
-        </repository>
-
-        <repository>
-            <id>overcast</id>
-            <url>https://repo.oc.tc/content/groups/public</url>
         </repository>
 
     </repositories>
@@ -29,9 +24,16 @@
 
          <!-- Paperspigot -->
         <dependency>
-            <groupId>com.minehut</groupId>
-            <artifactId>paperspigot</artifactId>
-            <version>1.10.2-20161126.062342-1</version>
+            <groupId>com.destroystokyo.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+             
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot</artifactId>
+            <version>1.12.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
 
@@ -54,13 +56,6 @@
             <groupId>org.jdom</groupId>
             <artifactId>jdom</artifactId>
             <version>2.0.2</version>
-        </dependency>
-
-        <!-- NoCheatPlus -->
-        <dependency>
-            <groupId>nocheatplus</groupId>
-            <artifactId>nocheatplus</artifactId>
-            <version>1.11.0-20161126.180456-1</version>
         </dependency>
 
         <!-- http://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
@@ -119,13 +114,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>minehut-repo</id>
-            <name>minehut repo</name>
-            <url>http://repo.minehut.com/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-    </distributionManagement>
 
 </project>
